@@ -7,18 +7,22 @@ export default function Portfolio() {
     const [data, setData] = useState([]);
     const list = [
         {
+            link: "www.google.com",
             id: "featured",
             title: "Featured",
         },
         {
+            link: "www.google.com",
             id: "web-devop",
             title: "Web-Devop",
         },
         {
+            link: "www.google.com",
             id: "wine-quality",
             title: "Wine-Quality",
         },
         {
+            link: "www.google.com",
             id: "bank-management",
             title: "Bank-Management",
         },
@@ -56,8 +60,6 @@ export default function Portfolio() {
         }
     }, [selected])
 
-
-
     return (
         <div className='portfolio' id="portfolio">
             <h1>Portfolio</h1>
@@ -71,8 +73,12 @@ export default function Portfolio() {
                     <div className="item">
                         <img src={d.img} alt="" />
                         <h3>{d.title} </h3>
+                        <div className="button">
+                            <button>Visit</button>
+                        </div>
                     </div>
                 ))}
+
             </div>
         </div>
     )

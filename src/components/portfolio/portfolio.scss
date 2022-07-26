@@ -29,9 +29,11 @@
         width: 220px;
         height: 150px;
         border-radius: 20px;
+        background-color: lightgray;
         border: 1px solid lightgray;
         margin: 10px 20px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         color: white;
         position: relative;
@@ -47,6 +49,15 @@
             object-fit: cover;
             z-index: 1;
 
+        }
+        button{
+            display: flex;
+            margin-top: 20px;
+            margin-left: 10px;
+            border-radius: 30%;
+            z-index: 2;
+            position: relative;
+            cursor: pointer;
         }
         &:hover{
             background-color: $mainColor;
