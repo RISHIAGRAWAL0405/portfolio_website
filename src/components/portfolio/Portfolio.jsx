@@ -3,6 +3,7 @@ import Portfoliolist from "../portfoliolist/Portfoliolist";
 import { useEffect, useState } from "react";
 import { featuredPortfolio, webPortfolio, mobilePortfolio, designPortfolio, contentPortfolio } from "../../data";
 export default function Portfolio() {
+
     const [selected, setSelected] = useState("featured");
     const [data, setData] = useState([]);
     const list = [
@@ -73,7 +74,7 @@ export default function Portfolio() {
                     <div className="item">
                         <img src={d.img} alt="" />
                         <h3>{d.title} </h3>
-                        <div className="button">
+                        <div className="button" onClick={d.link}>
                             <button>Visit</button>
                         </div>
                     </div>
